@@ -67,7 +67,7 @@ public class PlayerMovement : MonoBehaviour
         if (Physics.Raycast(transform.position, Vector3.down, out hit, _cc.height / 2 * _slopeForceRayLength))
         {
             if (hit.normal != Vector3.up)
-            {
+            {   
                 return true;
             }
         }
